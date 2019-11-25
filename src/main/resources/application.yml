@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xiaoyan-james/config-repo.git
+          username: 779691112@qq.com
+          password: yan4621210
+          basedir: E:/imooc-module/config/gitDir
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8760/eureka/
+server:
+  port: 8080
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
