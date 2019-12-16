@@ -10,18 +10,20 @@ spring:
           password: yan4621210
           basedir: E:/imooc-module/config/gitDir
   rabbitmq:
-    host: localhost
+    host: 192.168.150.237
     port: 5672
-    username: guest
-    password: guest
+    username: xiaoyan
+    password: 123456
 
 eureka:
   client:
     service-url:
-      defaultZone: http://eureka:8760/eureka/
-#      defaultZone: http://localhost:8760/eureka/
+#      defaultZone: http://eureka1:8761/eureka/,http://eureka2:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    prefer-ip-address: true
 server:
-  port: 8080
+  port: 8777
 
 management:
   endpoints:
